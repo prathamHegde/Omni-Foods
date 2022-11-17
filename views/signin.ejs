@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Always include this line of code!!! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/sign.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Omnifood</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">How it works</a></li>
+          <li><a class="main-nav-link" href="#">Meals</a></li>
+          <li><a class="main-nav-link" href="#">Testimonials</a></li>
+          <li><a class="main-nav-link" href="#">Pricing</a></li>
+          <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              A healthy meal delivered to your door, every single day
+            </h1>
+            <p class="hero-description">
+              The smart 365-days-per-year food subscription that will make you
+              eat healthy again. Tailored to your personal tastes and
+              nutritional needs.
+            </p>
+            <a href="#" class="btn btn--full margin-right-sm"
+              >Start eating well</a
+            >
+            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <div class="delivered-meals">
+              <div class="delivered-imgs">
+                <img src="img/customers/customer-1.jpg" alt="Customer photo" />
+                <img src="img/customers/customer-2.jpg" alt="Customer photo" />
+                <img src="img/customers/customer-3.jpg" alt="Customer photo" />
+                <img src="img/customers/customer-4.jpg" alt="Customer photo" />
+                <img src="img/customers/customer-5.jpg" alt="Customer photo" />
+                <img src="img/customers/customer-6.jpg" alt="Customer photo" />
+              </div>
+              <p class="delivered-text">
+                <span>250,000+</span> meals delivered last year!
+              </p>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <img
+              src="img/hero.png"
+              class="hero-img"
+              alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+            />
+          </div>
+        </div>
+      </section>
+
+      
+
+      <br/>
+    <br/>
+    <br>
+<br>
+    <div class="cont">
+        <div class="form sign-in">
+          <form action="/login/signin" method = "POST">
+            <h2>Welcome</h2>
+            <label>
+                <span>Email</span>
+                <input type="email" name="email" placeholder="Username didn't match!!!" required/>
+            </label>
+            <label>
+                <span>Password</span>
+                <input type="password" name="password" placeholder="password didn't match!!!" required/>
+            </label>
+            <a href="./forgotPassword" class="forgot-pass"><p class="forgot-pass">Forgot password?</p></a>
+            <button class="submit">Sign In</button>
+         </form>
+      
+        </div>
+        <div class="sub-cont">
+            <div class="img">
+                <div class="img__text m--up">
+                 
+                    <h3>Don't have an account? Please Sign up!<h3>
+                </div>
+                <div class="img__text m--in">
+                
+                    <h3>If you already has an account, just sign in.<h3>
+                </div>
+                <div class="img__btn">
+                    <span class="m--up">Sign Up</span>
+                    <span class="m--in">Sign In</span>
+                </div>
+            </div>
+            <div class="form sign-up">
+              <form action="/login/signup" method = "POST">
+                <h2>Create your Account</h2>
+                <label>
+                    <span>Name</span>
+                    <input type="text" name="name" required/>
+                </label>
+                <label>
+                    <span>Email</span>
+                    <input type="email" name="email" required/>
+                </label>
+                <label>
+                    <span>Password</span>
+                    <input type="password" name="password" required/>
+                </label>
+                <button class="submit">Sign Up</button>
+               </form> 
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.img__btn').addEventListener('click', function() {
+            document.querySelector('.cont').classList.toggle('s--signup');
+        });
+    </script>
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; 2027 by Omnifood, Inc. All rights reserved.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              623 Harrison St., 2nd Floor, San Francisco, CA 94107
+            </p>
+            <p>
+              <a class="footer-link" href="tel:415-201-6370">415-201-6370</a
+              ><br />
+              <a class="footer-link" href="mailto:hello@omnifood.com"
+                >hello@omnifood.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About Omnifood</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Cooking partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Recipe directory </a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
