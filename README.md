@@ -4,3 +4,4 @@ An online restaurant management that helps you to manage all the restaurant acti
 
 Setup: 
  1. This has simple extra lines added by me.
+ 2. This is my second commit.
