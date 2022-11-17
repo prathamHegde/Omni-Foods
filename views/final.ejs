@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+      <!-- Always include this line of code!!! -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+  
+      <link rel="stylesheet" href="css/general.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/queries.css" />
+  
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule=""
+        src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+      ></script>
+      <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    </head>
+    <body>
+      <header class="header">
+        <a href="#">
+          <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
+        </a>
+  
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </header>
+      <br/>
+      <br/>
+      <br/>  
+
+
+      <section class="section-meals">
+        <div class="container center-text">
+          <span class="subheading">Food Ordered Details</span>
+          <h3 class="heading-tertiary">
+            <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+            Name :  <%= name %>
+                  <br/>
+          Total Bill : &nbsp; <span>$</span><%= total %>
+          </h3>
+        </div>
+          <div class="meal-attributes meal-attribute">
+            <% for (let i = 0;i < obj.length;i++) { %>
+             <h2><ion-icon class="meal-icon" name="star-outline"></ion-icon> &nbsp; Food : <%= obj[i].name %> , Quantity : <%= obj[i].count %></h2>
+           <% } %>
+            </div>
+          
+            <br/>
+            <br/>
+            <br/> <br/>
+            <h2 class="heading-secondary">
+              Thanks for ordering the food, <%= name %>
+            </h2>
+
+
+
+            <div class="container all-recipes">
+              <a href = "/recipes/final/end/payment" class="link">Proceed Payment &rarr;</a>
+            </div>
+
+            <br/>
+
+
+      <footer class="footer">
+        <div class="container grid grid--footer">
+  
+          <div class="logo-col">
+            <a href="#" class="footer-logo">
+              <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
+            </a>
+  
+            <ul class="social-links">
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+                ></a>
+              </li>
+            </ul>
+  
+            <p class="copyright">
+              Copyright &copy; 2027 by Omnifood, Inc. All rights reserved.
+            </p>
+          </div>
+  
+  
+          <nav class="nav-col">
+            <p class="footer-heading">Company</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">About Omnifood</a></li>
+              <li><a class="footer-link" href="#">For Business</a></li>
+              <li><a class="footer-link" href="#">Cooking partners</a></li>
+              <li><a class="footer-link" href="#">Careers</a></li>
+            </ul>
+          </nav>
+  
+          <nav class="nav-col">
+            <p class="footer-heading">Resources</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Recipe directory </a></li>
+              <li><a class="footer-link" href="#">Help center</a></li>
+              <li><a class="footer-link" href="#">Privacy & terms</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </body>
+</html>
